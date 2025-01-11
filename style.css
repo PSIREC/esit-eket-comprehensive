@@ -154,3 +154,41 @@ i {
     width: 100%;
     border-radius: 25px 25px 0 0;
 }
+
+.about-us {
+    background: black;
+    background: rgb(1, 1, 34);
+    height: 400px;
+}
+
+.abt-col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.why-choose-h2 {
+    font-family: Arial;
+    color: whitesmoke;
+}
+
+.why-choose-h3 {
+    color: whitesmoke;
+    font-family: 'Segoe UI';
+}
+
+.why-choose-p {
+    color: white;
+    font-family: cursive;
+}
+
+.rdm {
+    display: block;
+    text-align: center;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 25px;
+}
