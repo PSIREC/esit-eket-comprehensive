@@ -192,3 +192,12 @@ i {
     padding: 10px;
     border-radius: 25px;
 }
+
+.barss {
+    display: none;
+    /* width: 200px;
+    height: 200px; */
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
