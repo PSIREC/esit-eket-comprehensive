@@ -1,0 +1,55 @@
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        z-index: 10;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(0, 0, 0);
+        gap: 0;
+        overflow: hidden;
+        border-bottom: 1px solid white;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        cursor: pointer;
+    }
+
+    .menuIcon {
+        display: flex;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .menuIcon i {
+        display: flex;
+        color: white;
+    }
+
+    #menuList {
+        transition: .4s ease-in-out;
+    }
+    .welcome-text {
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+}

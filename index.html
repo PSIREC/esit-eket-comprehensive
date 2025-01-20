@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Christian Comprehensive High school</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- swiper css -->
 </head>
 <body>
     <header>
         <nav class="nav-container">
-            <h1 class="logo">Logo</h1>
-            <i class="fa-solid fa-bars barss"></i>
-            <ul class="fr-ul">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <ul id="menuList">
                 <li><a class="nav-links" href="#">Home</a></li>
-                <li><a class="nav-links" href="#">About US</a><i class="fa-solid fa-caret-down"></i></li>
+                <li><a class="nav-links" href="about.html" >About US</a><i class="fa-solid fa-caret-down"></i></li>
                 <li><a class="nav-links" href="#">School Fees</a></li>
                 <li><a class="nav-links" href="#">Admissions</a><i class="fa-solid fa-caret-down"></i></li>
                 <li><a class="nav-links" href="#">Events</a></li>
-                <li><a class="nav-links" href="#">School Portal</a><i class="fa-solid fa-arrow-right-long arwr"></i></li>
+                <li><a class="nav-links" href="/html/portal.html" target="_blank">School Portal</a><i class="fa-solid fa-arrow-right-long arwr"></i></li>
             </ul>
-            
+            <div class="menuIcon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
-    <main>
+    <!-- <main>
         <section class="welcome">
             <div class="welcome-container">
-                <p>School related pictures goes here</p>
+                
             </div>
                 <h1 class="welcome-text">
                 Welcome To Christian Comprehensive High school Esit Eket
@@ -82,6 +90,94 @@
                 </div>
             </div>        
         </section>
+    </main> -->
+
+
+    <main>
+        <section class="main swiper mySwiper">
+            <div class="wrapper swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="\assets\palm-tree-pictures-62s35p0lm8pwxstd.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet  elit. Sapiente!
+                        </h2>
+                        <a href="about.html" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="\assets\sacramento-city-hall-sun-shining-d9j5n80dxr6398wv.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet  elit. Sapiente!
+                        </h2>
+                        <a href="about.html" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="\assets\st-louis-city-whb19b5vaywj4cg0.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet  elit. Sapiente!
+                        </h2>
+                        <a href="about.html" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="\assets\supermarket-background-7spv0be3ybwotnel.jpg" alt="" class="image">
+                    <div class="image-data">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet  elit. Sapiente!
+                        </h2>
+                        <a href="about.html" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <video src="\assets\86866-594991232.mp4" autoplay loop></video>
+                    <div class="image-data">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+                        <h2>
+                            Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                            Lorem ipsum dolor sit amet  elit. Sapiente!
+                        </h2>
+                        <a href="about.html" class="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swp-btn"></div>
+            <div class="swiper-button-prev swp-btn"></div>
+            <div class="swiper-pagination  swp-btn-pgn"></div>
+        </section>
+        
     </main>
+    
+    <footer>
+
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
