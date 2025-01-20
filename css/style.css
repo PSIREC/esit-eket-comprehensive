@@ -370,3 +370,25 @@ a.button:hover {
     width: 12px;
     height: 12px;
 }
+
+.greeting-container {
+    display: flex;
+    justify-content: center;
+}
+
+.auto-type {
+    color: white;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.school-name {
+    color: yellow;
+}
+
+.grt-txt-container {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}

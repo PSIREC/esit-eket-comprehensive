@@ -156,6 +156,12 @@
             <div class="swiper-button-prev swp-btn"></div>
             <div class="swiper-pagination  swp-btn-pgn"></div>
         </section>
+        <section class="greeting-container">
+            <div class="grt-txt-container">
+                <h1 class="auto-type">You are welcome to <span class="school-name">Christian Comprehensive High School</span><span class="abbrr"> (CCHS)</span></h1>
+            </div>
+            
+        </section>
         
     </main>
     
@@ -164,7 +170,9 @@
     </footer>
     <script src="/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
+        // swiper sript
         let swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
@@ -178,6 +186,15 @@
                 clickable: true,
             },
         });
+
+        // typedjs script
+        let typed = new Typed(".auto-type",{
+            strings : ["A School Dedicated to Academic Excellence and Moral Growth", "At CCHS, We believe in:", "Holistic Education: Our curriculum integrates academics, arts, and physical education, encouraging students to develop well-rounded skills and interests.", "Character Development: We emphasize core values such as integrity, respect, empathy, and responsibility, guiding students to become compassionate and ethical leaders.", "Innovative Teaching: Our dedicated educators employ creative and engaging teaching methods, fostering critical thinking and a love for learning.", "Community Involvement: We encourage students to engage with the community through service-learning projects and civic activities, reinforcing the importance of giving back.", "Diversity and Inclusion: We celebrate the rich diversity of our student body, ensuring that every voice is heard and valued, creating an environment of belonging.", "And lots more!" ],
+            typeSpeed : 50,
+            backSpeed : 0.001,
+            loop    : true
+        }) 
+
     </script>
 </body>
 </html>
